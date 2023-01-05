@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dom.css">
+</head>
+
+<body>
+
+    <h1 class="Heading">Document Object Model (DOM)</h1>
+
+    <p>Q1. Write the code to access element which is having id as "text"?</p>
+    <pre>
+    Ans: const idElement = document.getElementById("text")
+        
+    </pre>
+
+    <p>Q2. Write the code to access element which is having tag as "h1"?</p>
+    <pre>
+    Ans: const h1 = document.getElementsByTagName("h1")
+         h1[0].innerHTML
+    </pre>
+
+    <p>Q3. Write the code to access element which is having class as "box"?</p>
+
+    <pre>
+    Ans: const element = document.getElementsByClassName("box")
+         element[0].innerHTML
+    </pre>
+
+    <p>Q4. Change the heading from "Hello" to "Hello World" using DOM functions?</p>
+
+    <pre>
+    <h1 class="head">hello</h1>
+    <button class="btn" onclick="clickButton()">Click Here</button>
+
+    </pre>
+    <p>Q5. Create three cards on HTML page and arrange them using flex property in row or horizontal direction and also
+        create button at the bottom named "Change Flex direction". <br>
+        When user clicks on this button, the cards arrangement should be changed to vertical direction.</p>
+    <div class="parent">
+        <div class="child "></div>
+        <div class="child child1"></div>
+        <div class="child child2"></div>
+        <div class="child child3"></div>
+        <div class="child child4"></div>
+    </div>
+
+    <button onclick="changeDir()" class="btn">Column</button>
+    <!-- <button onclick="returnDir()" class="btn">Row</button> -->
+    <p>
+        Q6. What’s the difference between window vs document?
+    </p>
+    <pre>
+    Ans: <u>Window Object:</u> The window object is the topmost object of the DOM hierarchy. 
+        It represents a browser window or frame that displays the contents of the webpage.
+        <u>Document Object:</u> The document object represent a web page that is loaded in the browser. 
+        By accessing the document object, we can access the element in the HTML page.
+    </pre>
+
+    <p>
+        Q7. Add one style attribute and give text color as red and id attribute and give the id value as "heading" in
+        the above given h1 tag using DOM functions.
+    </p>
+    <h1 id="colorchange">Hello</h1>
+    <button onclick="heading()" class="btn">Click Me</button>
+
+    <p>
+        Q8. Create an HTML page having content as Hello world and a button named Replace Text. When user will click on
+        this button page content should be changed to "Welcome to Elevation academy"
+    </p>
+    <h1 id="Text">Hello World</h1>
+    <button onclick="replace()" class="btn">Click Me</button>
+
+    <p>
+        Q9. Write code to implement timer clock using JS -- display HH:MM:SS -- the time should keep updating every
+        second
+    </p>
+    <h3>Time:</h3>
+    <div class="parent-clock">
+        <span class="hours"></span>
+        <span class="mins"></span>
+        <span class="secs"></span>
+        <span class="meridian"></span>
+    </div>
+
+    <p>
+        Q10. Create a select drop down for selecting Year 20-21, 21-22 etc. Print the item text selected
+    </p>
+    <p>       Select one from the given Options:</p>
+    <select name="" id="text1">
+
+        <option value="20-21">Year 20-21</option>
+        <option value="21-22">Year 21-22</option>
+        <option value="22-23">Year 22-23</option>
+        <option value="23-24">Year 23-24</option>
+        <option value="24-25">Year 24-25</option>
+        <option value="25-26">Year 25-26</option>
+
+    </select> <br><br><br>
+    <button onclick="getOption()" class="btn">Click here</button>
+    <p>The value of the selcted Option is :
+        <span id="output"></span>
+    </p>
+
+    <script src="dom.js"></script>
+    <!-- <script src="./in.js"></script> -->
+
+</body>
+
+</html>

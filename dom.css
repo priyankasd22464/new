@@ -1,0 +1,69 @@
+body {
+    background-color: lightcyan
+    
+}
+
+.parent {
+    display: flex;
+}
+
+.child {
+    background-color: tomato;
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    flex-direction: row;
+}
+
+.child1 {
+    background-color:tomato;
+}
+
+.child2 {
+    background-color: tomato;
+}
+
+.child3 {
+    background-color: tomato;
+}
+
+.child4 {
+    background-color: tomato;
+}
+
+.btn {
+    height: 50px;
+    width: 80px;
+    /* margin-right: 200px; */
+    margin-top: 20px;
+    background-color: cyan;
+    color: black;
+}
+
+p {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+pre {
+    color: black;
+    font-size: 20px;
+}
+
+.Heading {
+    text-align: center;
+    text-decoration: underline;
+
+}
+
+.parent-clock {
+    font-size: 25px;
+    position: relative;
+    left: 70px;
+    bottom: 43px
+}
+
+h3 {
+    font-size: 20px;
+}
